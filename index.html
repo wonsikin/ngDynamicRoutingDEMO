@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title ng-bind="'AngularJS&mdash;' + title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple demo of angularjs">
+    <meta name="author" content="ArthurWANG">
+
+    <!-- Le styles -->
+    <link href="./asset/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href="./asset/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <script src="./asset/jQuery/jquery-1.8.3.min.js"></script>
+    <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./asset/angular-1.2.2/angular.min.js"></script>
+    <script src="./asset/angular-1.2.2/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controllers/aboutCtrl.js"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">AngularJS Demo</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#/home">Home</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li><a href="#/contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <!--Div.ng-view将会被模板替换-->
+    <div ng-view>
+    </div>
+
+</div>
+<!-- /container -->
+
+
+</body>
+</html>
